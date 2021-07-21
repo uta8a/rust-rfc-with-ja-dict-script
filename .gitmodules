@@ -1,0 +1,6 @@
+[submodule "gospec-analyzer"]
+	path = gospec-analyzer
+	url = https://github.com/DQNEO/gospec-analyzer
+[submodule "rfcs"]
+	path = rfcs
+	url = https://github.com/rust-lang/rfcs
