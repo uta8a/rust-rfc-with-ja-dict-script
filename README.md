@@ -1,5 +1,6 @@
-# 日本語辞書tooltipつきRust RFC
-
+# 日本語辞書tooltipつきRust RFC生成
+- Experimental
+- 現在は仕組みができて辞書のデータをこれから充実させていこうという段階です。
 
 ## 手順
 - 辞書において無視する単語や訳語などのデータは `data/` にはいっています。(現在は一時的にgospecのものを使用しています) これをgospec-analyzerで用いるため `gospec-analyzer/data/` を消去して、 `data/` を代わりに配置します。
@@ -63,3 +64,7 @@ mkdir addon/word2stem
 cp docs/word2stem-*-*-*.js addon/word2stem/
 cp -r addon book/
 ```
+
+### 追加
+- `python3 dictionary.py` でdict.csvとhist.txtが生成されます。これらはそれぞれ、登場する全単語(ただし、`is` のように一般的なものや訳す必要のない技術用語を除く)、その単語の登場回数が記録されています。
+- 今後 `dict.csv` を頻度の高い順に埋めていけば辞書付きRFCが充実していきますが、どのようにcsvに書き込む仕組みを整えたらよいかはまだ分かってないです。何かアドバイスありましたらお願いします。 [Twitter @kaito_tateyama](https://twitter.com/kaito_tateyama)
