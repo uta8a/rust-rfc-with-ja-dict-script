@@ -3,7 +3,7 @@
 - 現在は仕組みができて辞書のデータをこれから充実させていこうという段階です。
 
 # 内容
-単語にカーソルが来ると訳が浮かび上がります。
+以下のように、単語にカーソルが来ると訳が浮かび上がります。
 
 ![image](img-readme.png)
 
@@ -77,6 +77,6 @@ cp docs/word2stem-*-*-*.js addon/word2stem/
 cp -r addon book/
 ```
 
-### 追加
+### 補足
 - `python3 dictionary.py` でdict.csvとhist.txtが生成されます。これらはそれぞれ、登場する全単語(ただし、`is` のように一般的なものや訳す必要のない技術用語を除く)、その単語の登場回数が記録されています。
 - 今後 `dict.csv` を頻度の高い順に埋めていけば辞書付きRFCが充実していきますが、どのようにcsvに書き込む仕組みを整えたらよいかはまだ分かってないです。何かアドバイスありましたらお願いします。 [Twitter @kaito_tateyama](https://twitter.com/kaito_tateyama)
