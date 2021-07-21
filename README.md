@@ -32,7 +32,7 @@ make bin/tokenizer
 make gospec
 make bin/tsv2json
 
-cd ../ # rust-rfc-with-ja-dict $
+cd ../ # rust-rfc-with-ja-dict-script $
 # 移動
 cp gospec-analyzer/bin/* bin/
 cp gospec-analyzer/gospec bin/
@@ -43,7 +43,7 @@ cp gospec-analyzer/gospec bin/
 ```shell
 cd rfcs
 ./generate-book.sh # book/に生成物ができる
-cd .. # rust-rfc-with-ja-dict $
+cd .. # rust-rfc-with-ja-dict-script $
 cp -r rfcs/book book
 ```
 
