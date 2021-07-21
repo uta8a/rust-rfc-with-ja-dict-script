@@ -1,12 +1,6 @@
 import glob
 import subprocess
 
-## make dictionary
-subprocess.run("mkdir -p docs/", shell=True, check=True)
-subprocess.run("bin/tsv2json data/dic.ja.tsv > docs/dic.ja.json", shell=True)
-subprocess.run("echo 'var dic = ' > docs/dic.ja.js", shell=True)
-subprocess.run("cat docs/dic.ja.json >> docs/dic.ja.js", shell=True)
-
 ## generate word2stem.js
 files  = glob.glob("./book/*-*-*.html")
 # files = ["tmp/0001-private-fields.html"]
