@@ -2,6 +2,18 @@
 - Experimental
 - 現在は仕組みができて辞書のデータをこれから充実させていこうという段階です。
 
+# 内容
+単語にカーソルが来ると訳が浮かび上がります。
+
+![image](img-readme.png)
+
+# 参考、ライセンスなど
+submoduleとして存在している2つのリポジトリについては、それぞれのライセンスの指示に従ってください。
+- [rust-lang/rfcs](https://github.com/rust-lang/rfcs) MIT, Apache version 2.0 のいずれかで提供されています
+- [DQNEO/gospec-analyzer](https://github.com/DQNEO/gospec-analyzer)
+
+また、gospec-analyzerを全面的に参考・使用しています。DQNEOさんありがとうございます。
+
 ## 手順
 - 辞書において無視する単語や訳語などのデータは `data/` にはいっています。(現在は一時的にgospecのものを使用しています) これをgospec-analyzerで用いるため `gospec-analyzer/data/` を消去して、 `data/` を代わりに配置します。
 
